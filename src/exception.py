@@ -1,5 +1,7 @@
 import sys
-import logging
+# from src.logger import logging  
+sys.path.insert(0, '../src')
+from logger import *
 
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()
